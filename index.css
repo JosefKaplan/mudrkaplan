@@ -1,3 +1,54 @@
+* {
+  border: 1px solid red !important;
+}
+
+.text-center {
+  height: 200px;
+}
+
+/* JS CLASSES */
 .js__hiddenOnLoad {
-    display: none !important;
-  }
+  display: none !important;
+}
+
+/* FONTS */
+
+/* COLORS */
+.bg-color-1 {}
+
+.bg-color-2 {}
+
+.bg-color-3 {}
+
+/* CONTAINERS */
+.container-full {
+  max-width: 100%;
+}
+
+.container-base {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.container-hero {
+  margin: auto;
+}
+
+
+/* SECTIONS */
+.nav-item {
+  max-height: 64px;
+  min-width: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar-brand {
+  min-width: 200px;
+  text-align: center;
+}
+
+/* TEXTS */
+a:hover {
+  font-weight: bold;
+}
