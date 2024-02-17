@@ -91,4 +91,5 @@ a:hover {}
 
 .bd-placeholder-img {
   height: 30vh;
+  min-height: 350px;
 }
