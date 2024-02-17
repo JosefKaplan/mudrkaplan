@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red !important;
+  /* border: 1px solid red !important; */
 }
 
 .text-center {
@@ -14,41 +14,73 @@
 /* FONTS */
 
 /* COLORS */
-.bg-color-1 {}
+.bg-color-white {
+  background-color: white;
+}
 
-.bg-color-2 {}
+.bg-color-blue-0 {
+  background-color: #e8e8f1;
+}
 
-.bg-color-3 {}
+.bg-color-blue-1 {
+  background-color: #B2B2CC;
+}
+
+.bg-color-blue-2 {
+  background-color: #9696BB;
+}
+
+.bg-color-red-0 {
+  background-color: #F1E9EC;
+}
+
+.bg-color-red-1 {
+  background-color: #E8C5D3;
+}
+
+.bg-color-red-2 {
+  background-color: #E0ACC0;
+}
 
 /* CONTAINERS */
 .container-full {
   max-width: 100%;
 }
 
-.container-base {
-  max-width: 1920px;
-  margin: auto;
-}
-
-.container-hero {
-  margin: auto;
-}
-
-
 /* SECTIONS */
-.nav-item {
-  max-height: 64px;
-  min-width: 100px;
-  overflow: hidden;
-  text-align: center;
+.navbar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .nav-item {
+    max-height: 64px;
+    min-width: 100px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5px;
+  }
+
+  .nav-item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .navbar-brand {
+    min-width: 200px;
+    text-align: center;
+  }
+
 }
 
-.navbar-brand {
-  min-width: 200px;
-  text-align: center;
+.hero {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* TEXTS */
-a:hover {
-  font-weight: bold;
+a:hover {}
+
+/* IMGS */
+.profile-picture {
+  object-fit: contain;
+  box-shadow: rgba(150, 150, 187, 0.4) 5px 5px, rgba(150, 150, 187, 0.3) 10px 10px, rgba(150, 150, 187, 0.2) 15px 15px, rgba(150, 150, 187, 0.1) 20px 20px, rgba(150, 150, 187, 0.05) 25px 25px;
+  border-radius: 5px;
 }

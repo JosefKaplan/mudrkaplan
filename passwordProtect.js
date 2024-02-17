@@ -31,15 +31,13 @@ function initPasswordProtection(password) {
     }
   }
 
-  if (!password) {
-    showBody();
-  } else {
+  if (password === "Chose1611") {
     requirePassword();
+  } else {
+    showBody();
   }
 }
 
 window.onload = function () {
-  initPasswordProtection(password);
+  initPasswordProtection(password); 
 };
-
-

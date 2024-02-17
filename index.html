@@ -45,14 +45,15 @@
   <!--My Own files-->
   <link rel="stylesheet" type="text/css" href="./index.css" />
   <script>
-    const password = "Chose1611"; //pokud není nastaveno, není požadováno
+    const password = "Chose1611"
+    //const password = false;
   </script>
-  <script src="index.js"></script>
+  <script src="passwordProtect.js"></script>
 </head>
 
-<body class="js__hiddenOnLoad">
-  <header class="container-base bg-color-1">
-    <nav class="navbar navbar-expand-lg navbar-light">
+<body class="js__hiddenOnLoad bg-color-blue-0">
+  <header class="container-full bg-color-white">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">MUDr. Kaplan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbarToggle"
@@ -62,13 +63,13 @@
         <div class="collapse navbar-collapse" id="collapseNavbarToggle">
           <ul class="navbar-nav ms-auto flex-nowrap">
             <li class="nav-item m-2 p-2">
-              <a class="nav-link active" href="#" aria-current="page" href="#">Item 1</a>
+              <a class="nav-link active" href="#" aria-current="page">Item 1</a>
             </li>
             <li class="nav-item m-2 p-2">
-              <a class="nav-link active" href="#" aria-current="page" href="#">Item 2</a>
+              <a class="nav-link active" href="#" aria-current="page">Item 2</a>
             </li>
             <li class="nav-item m-2 p-2">
-              <a class="nav-link active" href="#" aria-current="page" href="#">Item 3</a>
+              <a class="nav-link active" href="#" aria-current="page">Item 3</a>
             </li>
           </ul>
         </div>
@@ -76,32 +77,76 @@
     </nav>
   </header>
 
-  <section class="container-full">
-    <div class="container-hero">
-      <div class="container-base text-center">
-        hero
+  <section class="container-full m-5">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 bg-color-white hero">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://scontent.fbrq1-1.fna.fbcdn.net/v/t39.30808-6/273905765_104418068846011_7714471791424240944_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=8oJxrqkvaCwAX9TNWUB&_nc_ht=scontent.fbrq1-1.fna&oh=00_AfBW1WCHLAMTn4Q6wrxjZTA9nnyKJvu8IA2N3i7GOQU76A&oe=65D5AC5B"
+            class="d-block mx-lg-auto img-fluid profile-picture" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">MUDr. Vlastislav Kaplan</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat mi ut purus porttitor,
+            nec iaculis diam laoreet. Nullam sit amet erat vestibulum, sagittis neque vel, efficitur mauris. Cras eu
+            tincidunt justo. Donec nec rhoncus mauris, quis aliquam justo. Aliquam odio quam, lobortis id ullamcorper
+            vitae, volutpat venenatis turpis. Nulla dictum blandit libero sed elementum. Ut a sodales mauris, sit amet
+            luctus sapien. Maecenas sit amet imperdiet justo.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-base text-center">
-      text
-    </div>
 
-    <div class="container-base text-center">
-      text
-    </div>
-
-    <div class="container-base text-center">
-      text
-    </div>
-
-    <div class="container-base text-center">
-      text
+    <div class="container px-4 bg-color-white py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Hanging icons</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">Primary button</a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">Primary button</a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#tools"></use>
+            </svg>
+          </div>
+          <div>
+            <h2>Featured title</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary">Primary button</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-
-
-  <footer class="container-base">
+  <footer class="container-full container bg-color-white">
     <div class="row m-2 p-2 d-flex justify-content-between">
       <div class="col">
         <p class="text-muted">© 2024</p>
@@ -109,9 +154,7 @@
       <div class="col align-items-end">
         <p class="text-end">important info</p>
       </div>
-      <div>
-      </div>
+    </div>
   </footer>
 </body>
-
 </html>
