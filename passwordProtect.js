@@ -1,4 +1,4 @@
-function initPasswordProtection(password) {
+function initPasswordProtection(requirePassword, password) {
   let pokus = 0;
   let pokusTime = 10000;
 
@@ -6,7 +6,7 @@ function initPasswordProtection(password) {
     document.body.classList.remove("js__hiddenOnLoad");
   }
 
-  function requirePassword() {
+  function passPasswordTest() {
     let pass = prompt("Zadej heslo:", "");
     pokus++;
     pokusTime = pokusTime * 2;
@@ -16,7 +16,7 @@ function initPasswordProtection(password) {
       showBody();
     } else if (pokus < 3) {
       alert(`Zbývá ti ${3 - pokus} pokusů, zkus to znovu.`);
-      requirePassword();
+      passPasswordTest();
     } else {
       let minutes = Math.floor(pokusTime / 60000);
       let seconds = Math.floor((pokusTime % 60000) / 1000);
@@ -26,18 +26,19 @@ function initPasswordProtection(password) {
         `Vypršel počet pokusů, zkus to znovu za ${minutes} minut a ${seconds} vteřin.`
       );
       setTimeout(() => {
-        requirePassword();
+        passPasswordTest();
       }, pokusTime);
     }
   }
 
-  if (password === "Chose1611") {
-    requirePassword();
+  if (requirePassword) {
+    passPasswordTest();
   } else {
     showBody();
   }
 }
 
 window.onload = function () {
-  initPasswordProtection(password); 
+  const password = "Chose1611"
+  initPasswordProtection(requirePassword, password); 
 };
