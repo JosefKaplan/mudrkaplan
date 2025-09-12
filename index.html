@@ -26,13 +26,6 @@
     <!-- Font Awesome icons (free version) -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
     <!-- Optional: jQuery first, then Popper.js -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -68,7 +61,7 @@
     <script src="passwordProtect.js"></script>
   </head>
   <script>
-    const requirePassword = true;
+    const requirePassword = false;
   </script>
 
   <body class="js__hiddenOnLoad bg-color-blue-0">
@@ -88,19 +81,19 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapseNavbarToggle">
-            <ul class="navbar-nav ms-auto flex-nowrap align-items-center p-2">
+            <div class="navbar-nav ms-auto flex-nowrap align-items-center p-2">
               <a class="nav-link p-0" href="#open-hours" aria-current="page">
-                <li class="nav-item py-3 px-4">Ordinační hodiny</li>
+                <span class="nav-item py-3 px-4">Ordinační hodiny</li>
               </a>
               <a class="nav-link p-0" href="#services" aria-current="page">
-                <li class="nav-item py-3 px-4">Služby</li>
+                <span class="nav-item py-3 px-4">Služby</li>
               </a>
               <a
                 class="nav-link p-0"
                 href="#emergency-care"
                 aria-current="page"
               >
-                <li class="nav-item py-3 px-4">Lékařská pohotovost</li>
+                <span class="nav-item py-3 px-4">Lékařská pohotovost</li>
               </a>
               <!-- <a class="nav-link p-0" href="#prices" aria-current="page">
                 <li class="nav-item py-3 px-4">Ceník</li>
@@ -110,7 +103,7 @@
                 href="#insurance-contacts"
                 aria-current="page"
               >
-                <li class="nav-item py-3 px-4">Důležité kontakty</li>
+                <span class="nav-item py-3 px-4">Důležité kontakty</li>
               </a>
             </ul>
           </div>
@@ -310,25 +303,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="carousel-item carousel-item--profile h-100">
-                  <p>
-                    Začínal jsem jako vojenský lékař u různých útvarů v ČR. V
-                    rámci profesního růstu jsem si prošel také několika
-                    nemocnicemi, naposledy ve funkci lékařského náměstka.
-                    Dvakrát jsem zastával funkci ředitele odboru na Ministerstvu
-                    zdravotnictví a pracoval jsem v několika zdravotních
-                    pojišťovnách především v oblasti revizního lékařství. V
-                    neposlední řadě jsem působil také jako posudkový lékař.
-                  </p>
-                  <p>
-                    Během let své bohaté profesní činnosti jsem byl v kontaktu s
-                    terénem praktického lékařství, ke kterému jsem se vždy
-                    vracel a nyní jsem rád, že mohu předávat své bohaté
-                    zkušenosti jako praktický lékař a pomáhat těm, kteří se na
-                    mne obracejí. V současné době se významně věnuji oblasti
-                    psychosomatiky.
-                  </p>
-                  <hr />
+                <div class="carousel-item carousel-item--profile h-100 ml-4 mr-4">
                   <h5>Pregraduální vzdělání</h5>
                   <p>Lékařská fakulta v Hradci Králové 1976 – 1982</p>
                   <h5>Postgraduální vzdělání</h5>
@@ -344,11 +319,21 @@
                   <p class="pb-1 m-0">
                     1993 – Specializace v oboru posudkové lékařství.
                   </p>
-                  <p>
+                  <p class="pb-1 m-0">
                     Průběžně – Absolvování kurzů a seminářů v rámci
                     celoživotního vzdělávání lékařů.
                   </p>
                 </div>
+                <div class="carousel-item carousel-item--profile h-100 ml-4 mr-4">
+                  <p class="pb-1 m-0">
+                    Začínal jsem jako vojenský lékař u různých útvarů v ČR. V rámci profesního růstu jsem si prošel také několika nemocnicemi, naposledy ve funkci lékařského náměstka. Dvakrát jsem zastával funkci ředitele odboru na Ministerstvu zdravotnictví a pracoval jsem v několika zdravotních pojišťovnách především v oblasti revizního lékařství. V neposlední řadě jsem působil také jako posudkový lékař.
+                  </p>
+                  <br />
+                  <p class="pb-1 m-0">
+                    Během let své bohaté profesní činnosti jsem byl v kontaktu s terénem praktického lékařství, ke kterému jsem se vždy vracel a nyní jsem rád, že mohu předávat své bohaté zkušenosti jako praktický lékař a pomáhat těm, kteří se na mne obracejí. V současné době se významně věnuji oblasti psychosomatiky.
+                  </p>
+                </div>
+
               </div>
               <button
                 class="carousel-control-prev"
@@ -470,11 +455,7 @@
               <p class="display-6">
                 <span class="badge badge-secondary"> </span>
               </p>
-<<<<<<< HEAD
-              <h2 class="">Středa</h2>
-=======
               <h2>Středa</h2>
->>>>>>> 1ce85009867af3db0a6541e82c92c614224f192e
             </div>
             <div class="col-12 col-md-10">
               <h3 class="text-uppercase"><strong>Všejany</strong></h3>

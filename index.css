@@ -222,6 +222,13 @@
   position: relative;
 }
 
+.carousel-control-next-icon{
+  margin-right: -8rem;
+}
+.carousel-control-prev-icon {
+  margin-left: -8rem;
+}
+
 .carousel-control-next-icon::after {
   content: '';
   display: block;
