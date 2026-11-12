@@ -7,7 +7,7 @@
  Thanks for checking my code!
 =============================
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -16,61 +16,147 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>MUDr. Kaplan | Ordinace</title>
-    <link rel="icon" href="" type="image/x-icon" />
-
-    <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Ordinace praktického lékaře MUDr. Vlastislava Kaplana – Dolní Bousov, Mladá Boleslav a Všejany. Ordinační hodiny, služby, kontakty a lékařská pohotovost v okolí."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:url" content="https://mudrkaplan.com/" />
+    <meta
+      property="og:title"
+      content="MUDr. Vlastislav Kaplan | Ordinace praktického lékaře"
+    />
+    <meta
+      property="og:description"
+      content="Ordinace praktického lékaře MUDr. Vlastislava Kaplana – Dolní Bousov, Mladá Boleslav a Všejany. Ordinační hodiny, služby, kontakty a lékařská pohotovost v okolí."
+    />
+    <!-- Opening hours for search engines: keep in sync with the #open-hours section -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Physician",
+            "name": "MUDr. Vlastislav Kaplan – ordinace Dolní Bousov",
+            "url": "https://mudrkaplan.com/",
+            "medicalSpecialty": "https://schema.org/PrimaryCare",
+            "telephone": "+420736478219",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Zahradní 617",
+              "addressLocality": "Dolní Bousov",
+              "postalCode": "294 04",
+              "addressCountry": "CZ"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Thursday"],
+                "opens": "07:00",
+                "closes": "13:00"
+              }
+            ]
+          },
+          {
+            "@type": "Physician",
+            "name": "MUDr. Vlastislav Kaplan – ordinace Mladá Boleslav",
+            "url": "https://mudrkaplan.com/",
+            "medicalSpecialty": "https://schema.org/PrimaryCare",
+            "telephone": "+420731612710",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jičínská 244",
+              "addressLocality": "Mladá Boleslav",
+              "postalCode": "293 01",
+              "addressCountry": "CZ"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday"],
+                "opens": "10:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday"],
+                "opens": "07:00",
+                "closes": "13:00"
+              }
+            ]
+          },
+          {
+            "@type": "Physician",
+            "name": "MUDr. Vlastislav Kaplan – ordinace Všejany",
+            "url": "https://mudrkaplan.com/",
+            "medicalSpecialty": "https://schema.org/PrimaryCare",
+            "telephone": "+420737432989",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Hlavní 120",
+              "addressLocality": "Všejany",
+              "postalCode": "294 43",
+              "addressCountry": "CZ"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Wednesday"],
+                "opens": "07:00",
+                "closes": "15:30"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
     <!-- Font Awesome icons (free version) -->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-
-    <!-- Optional: jQuery first, then Popper.js -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!--BOOTSTRAP 5.0.2-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/brands.css"
+    />
+
+    <!--BOOTSTRAP 5.3.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
     <!--My Own files-->
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="carouselCustomBehaviour.js"></script>
-    <script src="passwordProtect.js"></script>
+    <script defer src="carouselCustomBehaviour.js"></script>
+    <script defer src="closeNavbarMenuOnLinkClick.js"></script>
   </head>
-  <script>
-    const requirePassword = false;
-  </script>
 
-  <body class="js__hiddenOnLoad bg-color-blue-0">
-    <header class="container-full bg-color-white">
+  <body class="bg-color-blue-0">
+    <header class="bg-color-white sticky-md-top">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">MUDr. Kaplan</a>
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="favicon.svg" width="32" height="32" alt="" />
+            MUDr. Kaplan
+          </a>
           <button
-            class="navbar-toggler custom-box-shadow"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseNavbarToggle"
@@ -82,35 +168,24 @@
           </button>
           <div class="collapse navbar-collapse" id="collapseNavbarToggle">
             <div class="navbar-nav ms-auto flex-nowrap align-items-center p-2">
-              <a class="nav-link p-0" href="#open-hours" aria-current="page">
-                <span class="nav-item py-3 px-4">Ordinační hodiny</li>
+              <a class="nav-link p-0" href="#open-hours">
+                <span class="nav-item py-3 px-4">Ordinační hodiny</span>
               </a>
-              <a class="nav-link p-0" href="#services" aria-current="page">
-                <span class="nav-item py-3 px-4">Služby</li>
+              <a class="nav-link p-0" href="#services">
+                <span class="nav-item py-3 px-4">Služby</span>
               </a>
-              <a
-                class="nav-link p-0"
-                href="#emergency-care"
-                aria-current="page"
-              >
-                <span class="nav-item py-3 px-4">Lékařská pohotovost</li>
+              <a class="nav-link p-0" href="#emergency-care">
+                <span class="nav-item py-3 px-4">Lékařská pohotovost</span>
               </a>
-              <!-- <a class="nav-link p-0" href="#prices" aria-current="page">
-                <li class="nav-item py-3 px-4">Ceník</li>
-              </a> -->
-              <a
-                class="nav-link p-0"
-                href="#insurance-contacts"
-                aria-current="page"
-              >
-                <span class="nav-item py-3 px-4">Důležité kontakty</li>
+              <a class="nav-link p-0" href="#insurance-contacts">
+                <span class="nav-item py-3 px-4">Důležité kontakty</span>
               </a>
-            </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-<!-- <div class="position-fixed top-0 start-50 translate-middle-x mt-2 w-100 info-message">
+    <!-- <div class="position-fixed top-0 start-50 translate-middle-x mt-2 w-100 info-message">
   <div class="container-sm">
     <div class="alert alert-danger alert-dismissible fade show shadow fs-5 m-0" role="alert">
       <div class="row align-items-center">
@@ -132,7 +207,6 @@
   </div>
 </div> -->
 
-    
     <div
       id="carouselBanner"
       class="carousel slide mb-5 m-0 p-0"
@@ -168,10 +242,8 @@
             class="carousel-item--bcg bd-placeholder-img"
             width="100%"
             height="100%"
-            src="https://lh3.googleusercontent.com/pw/AP1GczMIDUDCyJRQ-6b_GWVaYsHtcZBwPhipdqYjIFoJiSX8DVCvs8XMBAMnv4nO7pn1Fpa0hj-hVDSAOPg25gZso2iIQn3sJ5Omg4j501LGyThIBJIvBic=w2400"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
+            src="https://lh3.googleusercontent.com/pw/AP1GczMIDUDCyJRQ-6b_GWVaYsHtcZBwPhipdqYjIFoJiSX8DVCvs8XMBAMnv4nO7pn1Fpa0hj-hVDSAOPg25gZso2iIQn3sJ5Omg4j501LGyThIBJIvBic=w1600"
+            alt=""
           />
           <div class="carousel-caption txt-deft-blue mb-5 pt-5">
             <p class="h1-like">Spolupráce</p>
@@ -188,10 +260,8 @@
             class="carousel-item--bcg bd-placeholder-img"
             width="100%"
             height="100%"
-            src="https://lh3.googleusercontent.com/pw/AP1GczMLdBQzzODVswGbDJTcyndYXcHMlmTGmqm4FKHUTUYatweS2twB37a03WHwY7_MrkZLKN6n2lOe2kFlj350_8iwx1bvpUXwVcqKWxfQND75pFLv-xU=w2400"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
+            src="https://lh3.googleusercontent.com/pw/AP1GczMLdBQzzODVswGbDJTcyndYXcHMlmTGmqm4FKHUTUYatweS2twB37a03WHwY7_MrkZLKN6n2lOe2kFlj350_8iwx1bvpUXwVcqKWxfQND75pFLv-xU=w1600"
+            alt=""
           />
           <div class="carousel-caption txt-deft-blue mb-5 pt-5">
             <p class="h1-like">Ordinační hodiny</p>
@@ -209,10 +279,8 @@
             class="carousel-item--bcg bd-placeholder-img"
             width="100%"
             height="100%"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNl-6-r5onFg7cDTyc0BfIvwEINnFa7E4hACq0URdV7nct9wvLQVOV8Uko7a_WPqlcNeitki2vrE4zL_Fx_Y9Dma5HC8eHGHVbu-S5EG9VVnQQnZMg=w2400"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
+            src="https://lh3.googleusercontent.com/pw/AP1GczNl-6-r5onFg7cDTyc0BfIvwEINnFa7E4hACq0URdV7nct9wvLQVOV8Uko7a_WPqlcNeitki2vrE4zL_Fx_Y9Dma5HC8eHGHVbu-S5EG9VVnQQnZMg=w1600"
+            alt=""
           />
           <div class="carousel-caption txt-deft-blue mb-5 pt-5">
             <p class="h1-like">Služby</p>
@@ -238,7 +306,7 @@
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Předchozí</span>
       </button>
       <button
         class="carousel-control-next"
@@ -247,17 +315,19 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Další</span>
       </button>
     </div>
-    <section class="container-full m-5">
-      <div class="container px-4 py-5" id="profile">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <main class="py-5">
+      <div class="container col-xxl-8 mb-5" id="profile">
+        <div
+          class="row flex-lg-row-reverse align-items-center justify-content-center gy-4 gx-lg-5"
+        >
           <div class="col-10 col-sm-8 col-lg-4">
             <img
-              src="https://lh3.googleusercontent.com/pw/AP1GczPNVRAQUyzS35yGZrqroFgFKZlyJ9kG3fkAS3nBl8NUEdIps3bBPsYctGi_jkNZOaKdmozhcSLxdcM08e3nr3Bem4jgZP2WCpAeX1RszLH4CRSO4BM=w2400"
+              src="https://lh3.googleusercontent.com/pw/AP1GczPNVRAQUyzS35yGZrqroFgFKZlyJ9kG3fkAS3nBl8NUEdIps3bBPsYctGi_jkNZOaKdmozhcSLxdcM08e3nr3Bem4jgZP2WCpAeX1RszLH4CRSO4BM=w1000"
               class="d-block mx-lg-auto img-fluid profile-picture"
-              alt="profile-picture"
+              alt="MUDr. Vlastislav Kaplan"
               width="700"
               height="500"
               loading="lazy"
@@ -277,9 +347,8 @@
                   <p class="lead">
                     <i>„Praktický lékař, který si na Vás udělá vždy čas.“</i>
                   </p>
-                  <p></p>
                   <div class="contact-info mb-4">
-                    <h5 class="fw-bold txt-deft-blue">Kontakt</h5>
+                    <h2 class="h5 fw-bold txt-deft-blue">Kontakt</h2>
                     <ul class="list-unstyled">
                       <li class="mb-2">
                         <a
@@ -323,12 +392,12 @@
                     </ul>
                   </div>
                 </div>
-                <div class="carousel-item carousel-item--profile h-100 ml-4 mr-4">
-                  <h5>Pregraduální vzdělání</h5>
+                <div class="carousel-item carousel-item--profile h-100 px-5">
+                  <h2 class="h5">Pregraduální vzdělání</h2>
                   <p>Lékařská fakulta v Hradci Králové 1976 – 1982</p>
-                  <h5>Postgraduální vzdělání</h5>
+                  <h2 class="h5">Postgraduální vzdělání</h2>
                   <p>Ústřední vojenská nemocnice Praha 1982 – 1984</p>
-                  <h5>Odborné vzdělání a kvalifikace</h5>
+                  <h2 class="h5">Odborné vzdělání a kvalifikace</h2>
                   <p class="pb-1 m-0">
                     1988 – Specializace v oboru všeobecné lékařství I. st.
                   </p>
@@ -344,16 +413,25 @@
                     celoživotního vzdělávání lékařů.
                   </p>
                 </div>
-                <div class="carousel-item carousel-item--profile h-100 ml-4 mr-4">
-                  <p class="pb-1 m-0">
-                    Začínal jsem jako vojenský lékař u různých útvarů v ČR. V rámci profesního růstu jsem si prošel také několika nemocnicemi, naposledy ve funkci lékařského náměstka. Dvakrát jsem zastával funkci ředitele odboru na Ministerstvu zdravotnictví a pracoval jsem v několika zdravotních pojišťovnách především v oblasti revizního lékařství. V neposlední řadě jsem působil také jako posudkový lékař.
+                <div class="carousel-item carousel-item--profile h-100 px-5">
+                  <p>
+                    Začínal jsem jako vojenský lékař u různých útvarů v ČR. V
+                    rámci profesního růstu jsem si prošel také několika
+                    nemocnicemi, naposledy ve funkci lékařského náměstka.
+                    Dvakrát jsem zastával funkci ředitele odboru na Ministerstvu
+                    zdravotnictví a pracoval jsem v několika zdravotních
+                    pojišťovnách především v oblasti revizního lékařství. V
+                    neposlední řadě jsem působil také jako posudkový lékař.
                   </p>
-                  <br />
-                  <p class="pb-1 m-0">
-                    Během let své bohaté profesní činnosti jsem byl v kontaktu s terénem praktického lékařství, ke kterému jsem se vždy vracel a nyní jsem rád, že mohu předávat své bohaté zkušenosti jako praktický lékař a pomáhat těm, kteří se na mne obracejí. V současné době se významně věnuji oblasti psychosomatiky.
+                  <p>
+                    Během let své bohaté profesní činnosti jsem byl v kontaktu s
+                    terénem praktického lékařství, ke kterému jsem se vždy
+                    vracel a nyní jsem rád, že mohu předávat své bohaté
+                    zkušenosti jako praktický lékař a pomáhat těm, kteří se na
+                    mne obracejí. V současné době se významně věnuji oblasti
+                    psychosomatiky.
                   </p>
                 </div>
-
               </div>
               <button
                 class="carousel-control-prev"
@@ -385,17 +463,14 @@
       </div>
 
       <div class="container mb-5 col-xxl-8" id="open-hours">
-        <h1 class="pb-2">Ordinační hodiny</h1>
+        <h2 class="section-title">Ordinační hodiny</h2>
         <div class="hero">
-          <div class="row row-striped">
-            <div class="col-12 col-md-2 text-md-right mb-3 mb-md-0">
-              <p class="display-6">
-                <span class="badge badge-secondary"> </span>
-              </p>
-              <h2>Pondělí</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-2 mb-2 mb-md-0">
+              <h3 class="day-name">Pondělí</h3>
             </div>
             <div class="col-12 col-md-10">
-              <h3 class="text-uppercase"><strong>Dolní Bousov</strong></h3>
+              <h4 class="place-name">Dolní Bousov</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -428,15 +503,12 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-2 text-md-right mb-3 mb-md-0">
-              <p class="display-6">
-                <span class="badge badge-secondary"> </span>
-              </p>
-              <h2>Úterý</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-2 mb-2 mb-md-0">
+              <h3 class="day-name">Úterý</h3>
             </div>
             <div class="col-12 col-md-10">
-              <h3 class="text-uppercase"><strong>Mladá Boleslav</strong></h3>
+              <h4 class="place-name">Mladá Boleslav</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -470,15 +542,12 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-2 text-md-right mb-3 mb-md-0">
-              <p class="display-6">
-                <span class="badge badge-secondary"> </span>
-              </p>
-              <h2>Středa</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-2 mb-2 mb-md-0">
+              <h3 class="day-name">Středa</h3>
             </div>
             <div class="col-12 col-md-10">
-              <h3 class="text-uppercase"><strong>Všejany</strong></h3>
+              <h4 class="place-name">Všejany</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -511,15 +580,12 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-2 text-md-right mb-3 mb-md-0">
-              <p class="display-6">
-                <span class="badge badge-secondary"> </span>
-              </p>
-              <h2 class="">Čtvrtek</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-2 mb-2 mb-md-0">
+              <h3 class="day-name">Čtvrtek</h3>
             </div>
             <div class="col-12 col-md-10">
-              <h3 class="text-uppercase"><strong>Dolní Bousov</strong></h3>
+              <h4 class="place-name">Dolní Bousov</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -552,15 +618,12 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-2 text-md-right mb-3 mb-md-0">
-              <p class="display-6">
-                <span class="badge badge-secondary"> </span>
-              </p>
-              <h2>Pátek</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-2 mb-2 mb-md-0">
+              <h3 class="day-name">Pátek</h3>
             </div>
             <div class="col-12 col-md-10">
-              <h3 class="text-uppercase"><strong>Mladá Boleslav</strong></h3>
+              <h4 class="place-name">Mladá Boleslav</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -597,141 +660,115 @@
         </div>
       </div>
 
-      <div class="container-full mb-5 px-4 bg-color-white py-5" id="services">
-        <h2 class="pb-2 border-bottom">Služby</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2"></use>
-              </svg>
+      <div class="container mb-5 col-xxl-8" id="services">
+        <h2 class="section-title">Služby</h2>
+        <div class="hero p-4">
+          <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-stethoscope" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Předoperační vyšetření</h3>
+                <p>
+                  Zhodnocení zdravotního stavu pacienta před plánovanou operací,
+                  aby byla zajištěna bezpečnost zákroku.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>Předoperační vyšetření</h2>
-              <p>
-                Zhodnocení zdravotního stavu pacienta před plánovanou operací,
-                aby byla zajištěna bezpečnost zákroku.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-car" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Způsobilost k řízení motorových vozidel</h3>
+                <p>
+                  Potvrzení, že pacient splňuje zdravotní podmínky pro bezpečné
+                  řízení vozidla.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#cpu-fill"></use>
-              </svg>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Vstupní prohlídky</h3>
+                <p>
+                  Kontrola zdraví při nástupu do zaměstnání, aby byla potvrzena
+                  způsobilost pro danou práci.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>Způsobilost k řízení motorových vozidel</h2>
-              <p>
-                Potvrzení, že pacient splňuje zdravotní podmínky pro bezpečné
-                řízení vozidla.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-baby" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Těhotenská prohlídka</h3>
+                <p>
+                  Kontrola zdravotního stavu těhotné ženy a sledování průběhu
+                  těhotenství.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#tools"></use>
-              </svg>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-file-medical" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Výpis ze zdravotní dokumentace</h3>
+                <p>
+                  Oficiální dokument shrnující zdravotní historii pacienta pro
+                  různé účely.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>Vstupní prohlídky</h2>
-              <p>
-                Kontrola zdraví při nástupu do zaměstnání, aby byla potvrzena
-                způsobilost pro danou práci.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">
+                  Periodické a výstupní prohlídky do zaměstnání
+                </h3>
+                <p>
+                  Pravidelné sledování zdraví zaměstnanců během zaměstnání a
+                  závěrečná prohlídka při jeho ukončení.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2"></use>
-              </svg>
-            </div>
-            <div>
-              <h2>Těhotenská prohlídka</h2>
-              <p>
-                Kontrola zdravotního stavu těhotné ženy a sledování průběhu
-                těhotenství.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#cpu-fill"></use>
-              </svg>
-            </div>
-            <div>
-              <h2>Výpis ze zdravotní dokumentace</h2>
-              <p>
-                Oficiální dokument shrnující zdravotní historii pacienta pro
-                různé účely.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2"></use>
-              </svg>
-            </div>
-            <div>
-              <h2>Periodické a výstupní prohlídky do zaměstnání</h2>
-              <p>
-                Pravidelné sledování zdraví zaměstnanců během zaměstnání a
-                závěrečná prohlídka při jeho ukončení.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#cpu-fill"></use>
-              </svg>
-            </div>
-            <div>
-              <h2>Způsobilost k držení zbrojního průkazu</h2>
-              <p>
-                Posouzení zdravotní vhodnosti pacienta pro držení a používání
-                zbraně.
-              </p>
-              <!-- <a href="#" class="btn btn-primary">Primary button</a> -->
+            <div class="col d-flex align-items-start">
+              <div class="icon-square flex-shrink-0 me-3">
+                <i class="fas fa-id-card" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="h5">Způsobilost k držení zbrojního průkazu</h3>
+                <p>
+                  Posouzení zdravotní vhodnosti pacienta pro držení a používání
+                  zbraně.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="container mb-5 col-xxl-8" id="emergency-care">
-        <h1 class="pb-2">Lékařská pohotovost v okolí</h1>
+        <h2 class="section-title">Lékařská pohotovost v okolí</h2>
         <div class="hero">
-          <div class="row row-striped">
-            <div class="col-12 col-md-4 text-md-right mb-3 mb-md-0">
-              <!-- <p class="display-10">
-          <span class="badge badge-secondary"> </span>
-        </p> -->
-              <h2>Nymburk</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
+              <h3 class="day-name">Nymburk</h3>
             </div>
             <div class="col-12 col-md-8">
-              <h3 class="text-uppercase">
-                <strong>Lékařská služba první pomoci</strong>
-              </h3>
+              <h4 class="place-name">Lékařská služba první pomoci</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
                     <li class="p-2">
                       <a
-                        href="https://maps.app.goo.gl/8Z3Yk6J2vZ5X9QwH6"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Nemocnice+Nymburk"
                         target="_blank"
                         rel="noopener"
                       >
@@ -753,23 +790,18 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-4 text-md-right mb-3 mb-md-0">
-              <!-- <p class="display-10">
-          <span class="badge badge-secondary"> </span>
-        </p> -->
-              <h2>Mladá Boleslav</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
+              <h3 class="day-name">Mladá Boleslav</h3>
             </div>
             <div class="col-12 col-md-8">
-              <h3 class="text-uppercase">
-                <strong>Lékařská pohotovost dospělí</strong>
-              </h3>
+              <h4 class="place-name">Lékařská pohotovost dospělí</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
                     <li class="p-2">
                       <a
-                        href="https://maps.app.goo.gl/xRa5Yb55HkZA4R1q7"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=t%C5%99%C3%ADda+V%C3%A1clava+Klementa+147%2C+293+01+Mlad%C3%A1+Boleslav"
                         target="_blank"
                         rel="noopener"
                       >
@@ -791,17 +823,12 @@
               </div>
             </div>
           </div>
-          <div class="row row-striped">
-            <div class="col-12 col-md-4 text-md-right mb-3 mb-md-0">
-              <!-- <p class="display-10">
-                <span class="badge badge-secondary"> </span>
-              </p> -->
-              <h2>Emergenční služba</h2>
+          <div class="row row-striped mx-0 align-items-center">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
+              <h3 class="day-name">Emergenční služba</h3>
             </div>
             <div class="col-12 col-md-8">
-              <h3 class="text-uppercase">
-                <strong>Rychlá zdravotnická pomoc</strong>
-              </h3>
+              <h4 class="place-name">Rychlá zdravotnická pomoc</h4>
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
@@ -826,11 +853,13 @@
         </div>
       </div>
 
-      <div class="container-full mb-5 px-4 py-5" id="psychosomatic-medicine">
-        <h1 class="pb-2">Poradenství v oblasti psychosomatické medicíny</h1>
+      <div class="container mb-5 col-xxl-8" id="psychosomatic-medicine">
+        <h2 class="section-title">
+          Poradenství v oblasti psychosomatické medicíny
+        </h2>
         <div class="row">
           <div class="col-12">
-            <p class="lead p-3">
+            <p class="lead quote-card">
               V naší přetechnizované době plné umělé inteligence, mobilních
               aplikací a nejrůznějších vyšetření se ztrácí kontakt s živým
               člověkem.
@@ -838,94 +867,78 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
-    <footer
-      class="container-full container bg-color-white"
-      id="insurance-contacts"
-    >
+    <footer class="bg-color-white py-4 px-3" id="insurance-contacts">
       <div
         class="row m-0 p-0 pt-2 d-flex justify-content-between align-items-center"
       >
         <div class="col align-items-start">
-          <h3 class="p-0 m-0">Smluvní pojišťovny:</h3>
+          <h2 class="h5 p-0 m-0">Smluvní pojišťovny:</h2>
         </div>
       </div>
       <div
         class="row m-0 p-0 d-flex justify-content-between align-items-center"
       >
-        <!-- <div class="col align-items-start">
-            <p class="text-muted">Smluvní pojišťovny:</p>
-        </div> -->
-
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNysHuUehT4MCVnFDCD5tFlMgfVI8_YMmEaFt2U2VD00lSa9je5MzaH2cE_iLNppaOjMaOMe7ofFE0UtdM1i77BlgMEU5yl5IMCFdkZpoHDnhYM7W0=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="vzp-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczNysHuUehT4MCVnFDCD5tFlMgfVI8_YMmEaFt2U2VD00lSa9je5MzaH2cE_iLNppaOjMaOMe7ofFE0UtdM1i77BlgMEU5yl5IMCFdkZpoHDnhYM7W0=w400"
+            loading="lazy"
+            alt="Všeobecná zdravotní pojišťovna (VZP)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNXZCs1RrtdzR45Exl00Xym3K4LHRJodfRKu0MIHHzlGZIVKq7LSbwRjWNXTCmA-4bZiMKHx14Q2l_XFZX5L0yD9c10k1t6t2LkQsSBBxSKNSR_DLU=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="vozp-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczNXZCs1RrtdzR45Exl00Xym3K4LHRJodfRKu0MIHHzlGZIVKq7LSbwRjWNXTCmA-4bZiMKHx14Q2l_XFZX5L0yD9c10k1t6t2LkQsSBBxSKNSR_DLU=w400"
+            loading="lazy"
+            alt="Vojenská zdravotní pojišťovna (VoZP)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo"
-            src="https://lh3.googleusercontent.com/pw/AP1GczOEdGm7Z5VuQx9bP1qo8RiSLqaKjmIe_JybXcLa_5_mG_Zt17CvTRusOIU-2BW5ZissqsTvT8WDoLVna4cn04p8Fx6gjSppZrGleXqJHtQBXREUxkY=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="cpzp-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczOEdGm7Z5VuQx9bP1qo8RiSLqaKjmIe_JybXcLa_5_mG_Zt17CvTRusOIU-2BW5ZissqsTvT8WDoLVna4cn04p8Fx6gjSppZrGleXqJHtQBXREUxkY=w400"
+            loading="lazy"
+            alt="Česká průmyslová zdravotní pojišťovna (ČPZP)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo px-4 py-2"
-            src="https://lh3.googleusercontent.com/pw/AP1GczMG865a1itaYIzk1rXjSgiRokveygqsMvwgYs8ena7qUE-VZl7xb-ni3KuJNcMYWwSG8nlvn2vuD4B-FQUvtfaorVro-vtiMryx3jLJt4CUaGYAeJo=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="ozp-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczMG865a1itaYIzk1rXjSgiRokveygqsMvwgYs8ena7qUE-VZl7xb-ni3KuJNcMYWwSG8nlvn2vuD4B-FQUvtfaorVro-vtiMryx3jLJt4CUaGYAeJo=w400"
+            loading="lazy"
+            alt="Oborová zdravotní pojišťovna (OZP)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNrpEP0YzNy2TAhFEklQ2v26MiWVKLYwKLKATzi_6PxBhdUhFgFxc5LyhbJGZIgsHwkN7SM-xBjxS_15C-XIPy-4FsILhDkfFUEF8GyXFsKdefizdY=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="zps-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczNrpEP0YzNy2TAhFEklQ2v26MiWVKLYwKLKATzi_6PxBhdUhFgFxc5LyhbJGZIgsHwkN7SM-xBjxS_15C-XIPy-4FsILhDkfFUEF8GyXFsKdefizdY=w400"
+            loading="lazy"
+            alt="Zaměstnanecká pojišťovna Škoda (ZPŠ)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo px-3 py-1"
-            src="https://lh3.googleusercontent.com/pw/AP1GczM__-v0de6BLfUxe5G_W-y2y8QqZwZW_IIpAxCEz3tYmePaUhKmOvtn5CuCc3a5M_bf0Ji1FUjHInqENMplZLkxTQzTgeoo02QmLFDkVZ83VNWM86I=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="zpmv-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczM__-v0de6BLfUxe5G_W-y2y8QqZwZW_IIpAxCEz3tYmePaUhKmOvtn5CuCc3a5M_bf0Ji1FUjHInqENMplZLkxTQzTgeoo02QmLFDkVZ83VNWM86I=w400"
+            loading="lazy"
+            alt="Zdravotní pojišťovna ministerstva vnitra ČR (ZPMV)"
           />
         </div>
         <div class="col insurance-logo--col">
           <img
             class="insurance-logo"
-            src="https://lh3.googleusercontent.com/pw/AP1GczO6oCJeOp9qatsOf0iB0TTeVWY3wjk6VZGQHxTny_5FlyORHfA4bhNEx4ET0SXlOIYGWs_6VLbevnQUDZ8FNEPLsUBZFwQFV7BNe_vG5JCZtoRMDvs=w2400"
-            aria-hidden="true"
-            focusable="false"
-            alt="rbp-insurance-logo"
+            src="https://lh3.googleusercontent.com/pw/AP1GczO6oCJeOp9qatsOf0iB0TTeVWY3wjk6VZGQHxTny_5FlyORHfA4bhNEx4ET0SXlOIYGWs_6VLbevnQUDZ8FNEPLsUBZFwQFV7BNe_vG5JCZtoRMDvs=w400"
+            loading="lazy"
+            alt="RBP, zdravotní pojišťovna"
           />
         </div>
 
-        <div
-          class="col insurance-logo--col align-items-end align-items-center my-2"
-        >
-          <a class="text-muted" href="https://josefkaplan.com/">©2025</a>
+        <div class="col-12 text-center mt-3">
+          <a class="text-muted" href="https://josefkaplan.com/">©2026</a>
         </div>
       </div>
     </footer>
