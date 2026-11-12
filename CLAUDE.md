@@ -12,9 +12,9 @@ Single-page website of a general practitioner's office (MUDr. Vlastislav Kaplan)
 
 ## Branches
 
-- `pages` holds the newest version of the site and is believed to be the branch GitHub Pages publishes (verify in repo Settings → Pages before relying on it).
-- `main` is behind `pages` (older page, missing `carouselCustomBehaviour.js`). Before editing, check which branch is checked out and compare with `git log main..origin/pages`.
-- `preprod` and `zaloha` ("backup") are older snapshots.
+- `pages` is the working branch and is believed to be the one GitHub Pages publishes (verify in repo Settings → Pages before relying on it).
+- `main` and `preprod` are kept identical to `pages`; after pushing `pages`, push the same commit to both (`git push origin pages:main pages:preprod`).
+- `zaloha` ("backup") is a snapshot of the old site from before the November 2026 redesign. Do not update it.
 
 ## Images
 
@@ -22,12 +22,15 @@ Single-page website of a general practitioner's office (MUDr. Vlastislav Kaplan)
 - The suffix after `=` sets the served size: `=w2400` means 2400 px wide. Use a smaller value (for example `=w400` for logos) rather than downloading a huge image into a small box.
 - These links cannot be generated or verified from the repo. When a new image is needed, ask the user for the link; never invent one or reuse a link for a different picture.
 - Exception: `favicon.svg` lives in the repo and is linked from `<head>`.
+- The iPhone home-screen icon (`apple-touch-icon` in `<head>`) is the same icon as a PNG on Google Photos. Its link ends in `=w180-rp`: `-rp` forces PNG output, without it Google serves JPEG.
+- The user usually sends a share link (`https://photos.app.goo.gl/…`). To get the direct link, fetch that page and take the `https://lh3.googleusercontent.com/pw/…` address from its `og:image` meta tag, dropping everything after `=` and adding the size you need.
 
 ## Page structure
 
 Sections are anchored by `id` and linked from the navbar, so renaming an `id` means updating the nav link too: `#profile`, `#open-hours`, `#services`, `#emergency-care`, `#psychosomatic-medicine`, `#insurance-contacts` (the footer with insurer logos).
 
 - Office hours are one `.row.row-striped` block per weekday, copy-pasted. The doctor works in three places (Dolní Bousov, Mladá Boleslav, Všejany), each with its own address, map link, phone and nurse, so a change to one place has to be repeated in every weekday block that uses it.
+- The top banner carousel (`#carouselBanner`) switches slides every 10 seconds (`data-bs-interval="10000"`), slowed down on purpose so the text can be read.
 - A temporary notice (for example "the office is closed on these days") is the `.info-message` alert block right below `<header>`. It stays in the file commented out; uncomment it and edit the text when a notice is needed, comment it out again afterwards.
 - Opening hours exist twice: in the visible `#open-hours` section and in the JSON-LD block in `<head>` (what search engines read). Change both together, including addresses and phone numbers.
 - The profile is a three-slide carousel (`#carouselProfile`: contacts, education, bio) that the visitor pages through with arrows; the owner wants it kept that way, not flattened into one block. `carouselCustomBehaviour.js` hides the prev/next arrow on its first/last slide and throws if that element is missing.
